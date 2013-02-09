@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="PluginA..d79a93bb-beba-4d0b-bdff-646e939e1151" Version="1.0" Language="en-US" Publisher="JaredPar" />
-    <DisplayName>PluginA</DisplayName>
+    <Identity Id="PluginB..8fb124f7-bf61-4263-b321-13d583daa301" Version="1.0" Language="en-US" Publisher="JaredPar" />
+    <DisplayName>PluginB</DisplayName>
     <Description>This is a sample classifier extension to the Visual Studio Editor.</Description>
   </Metadata>
   <Installation>
@@ -13,6 +13,7 @@
   </Dependencies>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="SimpleUtil.dll" />
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="SimpleUtil.dll" />
   </Assets>
 </PackageManifest>

@@ -12,11 +12,11 @@
     <ProductVersion>10.0.20305</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{C9E2C5DE-EE55-465A-A927-A319B6FA3FED}</ProjectGuid>
+    <ProjectGuid>{0B635690-874A-4E15-8744-C041C25926E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PluginA</RootNamespace>
-    <AssemblyName>PluginA</AssemblyName>
+    <RootNamespace>PluginB</RootNamespace>
+    <AssemblyName>PluginB</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -56,9 +56,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="SimpleUtil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=905796ff186f6826, processorArchitecture=MSIL">
+    <Reference Include="SimpleUtil, Version=2.0.0.0, Culture=neutral, PublicKeyToken=905796ff186f6826, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Versions\1.0\SimpleUtil.dll</HintPath>
+      <HintPath>..\Versions\2.0\SimpleUtil.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,7 +71,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PluginA.cs" />
+    <Compile Include="PluginB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

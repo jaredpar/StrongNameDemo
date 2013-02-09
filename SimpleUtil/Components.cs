@@ -22,7 +22,7 @@ namespace SimpleUtil
     [Export(SimpleUtilConstants.Contract, typeof(ITagFinder))]
     internal sealed class TagFinder : ITagFinder
     {
-        private const string Target = "component a";
+        private const string Target = "component b";
         private IEnumerable<SnapshotSpan> FindTags(SnapshotSpan span)
         {
             var snapshot = span.Snapshot;
