@@ -1,0 +1,78 @@
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+# Binary files
+*.exe 
+*.dbg 
+*.pcb 
+*.ncb 
+*.swp 
+*.snk 
+*.pdb 
+*.msi 
+*.cache
+
+# Project Files
+*.user
+*.suo
+*.db 
+*.psess
+TestResult.xml
+
+# NUnit files
+*.VisualState.xml
+
+# Resharper
+_ReSharper.*
+
+# Productivity Power Tools
+VsVim.sln.docstates
+
+# This solution uses NuGet package restore so don't check in
+# the actual binaries
+packages/
+
+# Ignore the Delpoy directory. This is where the deploy script
+# checks in a vsix that is deployable
+Deploy/
+
+# Ignore NCrunch files for the moment.  Still experimenting and
+# don't want to put them in there just yet
+*ncrunchproject
+*ncrunchsolution
+*crunchsolution.cache
+
+# Directories 
+*/obj/*
+*/bin/
+*/bin10/
+*/bin11/
+TestResults/
+*/Debug/
+*/Release/
+
+# VS Binaries
+Microsoft.VisualStudio.CoreUtility.dll
+Microsoft.VisualStudio.Editor.dll
+Microsoft.VisualStudio.Editor.Implementation.dll
+Microsoft.VisualStudio.Language.Intellisense.dll
+Microsoft.VisualStudio.Language.StandardClassification.dll
+Microsoft.VisualStudio.Platform.VSEditor.dll
+Microsoft.VisualStudio.Platform.VSEditor.Interop.dll
+Microsoft.VisualStudio.Shell.ViewManager.dll
+Microsoft.VisualStudio.Text.Data.dll
+Microsoft.VisualStudio.Text.Logic.dll
+Microsoft.VisualStudio.Text.UI.dll
+Microsoft.VisualStudio.Text.Internal.dll
+Microsoft.VisualStudio.Text.UI.dll
+Microsoft.VisualStudio.Text.UI.Wpf.dll
+Microsoft.VisualStudio.UI.Undo.dll
+sVim.Dev11.pdb
+
+# Profiling Output
+*.vsp
+
