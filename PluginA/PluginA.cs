@@ -43,7 +43,7 @@ namespace PluginA
             var tag = new TextMarkerTag("PluginA");
             foreach (var span in spans)
             {
-                foreach (var foundSpan in _tagFinder.FindTags(span))
+                foreach (var foundSpan in _tagFinder.FindTags2(span))
                 {
                     var tagSpan = new TagSpan<TextMarkerTag>(foundSpan, tag);
                     yield return tagSpan;

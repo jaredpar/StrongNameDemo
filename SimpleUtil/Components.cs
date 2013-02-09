@@ -11,12 +11,12 @@ namespace SimpleUtil
 {
     public interface ITagFinder
     {
-        ReadOnlyCollection<SnapshotSpan> FindTags(SnapshotSpan span);
+        ReadOnlyCollection<SnapshotSpan> FindTags2(SnapshotSpan span);
     }
 
     public static class SimpleUtilConstants
     {
-        public const string Contract = "SimpleUtil_1.0";
+        public const string Contract = "SimpleUtil_2.0";
     }
 
     [Export(SimpleUtilConstants.Contract, typeof(ITagFinder))]
@@ -61,7 +61,7 @@ namespace SimpleUtil
             return true;
         }
 
-        ReadOnlyCollection<SnapshotSpan> ITagFinder.FindTags(SnapshotSpan span)
+        ReadOnlyCollection<SnapshotSpan> ITagFinder.FindTags2(SnapshotSpan span)
         {
             return new ReadOnlyCollection<SnapshotSpan>(FindTags(span).ToList());
         }
